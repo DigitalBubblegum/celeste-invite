@@ -6,7 +6,6 @@ const Greeting = ({text,setText,mem,setMem}) =>{
         event.preventDefault()
         setText(event.target.value)
         setMem([...mem,event.target.value])
-        console.log(mem)
     }
     return(
     <div>
