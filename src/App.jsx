@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Greeting from './components/Greeting'
 
 function App() {
-  const [text, setText] = useState('Type some text in the text box')
+  const [text, setText] = useState('')
   const [mem, setMem] = useState([])
   const [isBold, setIsBold] = useState(true)
   const [isItalics, setIsItalics] = useState(false)
@@ -30,7 +30,6 @@ function App() {
   }
   const handleItalic = () => {
     setIsItalics(!isItalics)
-    console.log((isItalics));
   }
   return (
     <div className='bg-gray-100 h-screen w-screen'>

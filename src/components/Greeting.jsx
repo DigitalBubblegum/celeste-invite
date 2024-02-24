@@ -10,7 +10,7 @@ const Greeting = ({text,setText,mem,setMem}) =>{
     return(
     <div>
         <form className='flex justify-center items-center p-5' onSubmit={handleTextSubmit}>
-            <input className='bg-gray-100 rounded-full border-2 border-indigo-800 shadow-lg px-16 py-4' name ='text' value={text} onChange={handleTextChange} onClick={()=>setText('')}></input>
+            <input className='bg-gray-100 rounded-full border-2 border-indigo-800 shadow-lg px-16 py-4' name ='text' value={text} onChange={handleTextChange} onClick={()=>setText('')} placeholder='enter some text here'></input>
         </form>
     </div>)
 }
